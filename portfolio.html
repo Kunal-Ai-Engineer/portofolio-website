@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Kunal Banerjee | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    :root {
+      --main: #293241;
+      --accent: #ee6c4d;
+      --bg: #f8f9fa;
+      --card: #ffffff;
+      --shadow: rgba(44, 62, 80, 0.08) 0px 8px 16px;
+      --heading: #22223b;
+      --text: #4a4e69;
+    }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--main);
+      color: #fff;
+      text-align: center;
+      padding: 40px 0 30px 0;
+    }
+    header img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      background: #fff;
+      border-radius: 50%;
+      border: 5px solid var(--accent);
+      margin-bottom: 16px;
+      box-shadow: var(--shadow);
+    }
+    header h1 { margin: 8px 0 2px 0; font-size: 2.4em; }
+    header p { font-size: 1.15em; color: #fff; letter-spacing: 1px; }
+    nav {
+      margin-top: 14px;
+    }
+    nav a {
+      color: #fff;
+      background: rgba(238,108,77,0.97);
+      text-decoration: none;
+      margin: 0 7px;
+      padding: 8px 18px;
+      border-radius: 22px;
+      font-weight: 600;
+      font-size: 1em;
+      transition: background 0.2s;
+    }
+    nav a:hover { background: #fff; color: var(--accent); }
+
+    .container { max-width: 940px; margin: 30px auto; padding: 0 18px; }
+    section {
+      background: var(--card);
+      box-shadow: var(--shadow);
+      border-radius: 16px;
+      margin-bottom: 30px;
+      padding: 28px 32px 20px 32px;
+      position: relative;
+    }
+    section h2 {
+      color: var(--heading);
+      margin-top: 0;
+      font-size: 1.35em;
+      letter-spacing: 1px;
+      border-left: 5px solid var(--accent);
+      padding-left: 12px;
+      margin-bottom: 12px;
+    }
+    ul.skills-list {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 22px;
+    }
+    ul.skills-list li {
+      background: var(--bg);
+      padding: 8px 18px;
+      border-radius: 17px;
+      border: 1px solid #ddd;
+      font-weight: 500;
+    }
+    .two-col { display: flex; gap: 34px; flex-wrap: wrap;}
+    .two-col > div { flex: 1 1 260px; }
+
+    .exp-card,.proj-card {
+      background: var(--bg);
+      border-radius: 13px;
+      padding: 20px 18px 14px 18px;
+      margin-bottom: 14px;
+      border-left: 4px solid var(--accent);
+      box-shadow: rgba(44, 62, 80, 0.06) 0px 4px 14px;
+    }
+    .exp-card h3,.proj-card h3 { margin-top: 0; }
+    .exp-meta {
+      color: #8392a7;
+      font-size: 0.98em;
+      margin-bottom: 7px;
+      font-style: italic;
+    }
+    .exp-card ul,.proj-card ul { margin: 0; padding-left: 1.15em; }
+    .proj-badge {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      padding: 2px 10px;
+      border-radius: 10px;
+      font-size: 0.95em;
+      margin-right: 8px;
+      margin-bottom: 3px;
+    }
+
+    footer {
+      text-align: center;
+      background: var(--main);
+      color: #fff;
+      padding: 16px 5px 50px 5px;
+      font-size: 1.05em;
+      border-radius: 0 0 20px 20px;
+      letter-spacing: 0.6px;
+    }
+    .contact-links {
+      margin-top: 14px;
+      font-size: 1.14em;
+    }
+    .contact-links a {
+      color: var(--accent);
+      margin: 0 7px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    @media (max-width: 740px){
+      .container { padding: 0 2vw; }
+      section { padding: 16px 9vw 14px 9vw; }
+      .two-col { flex-direction: column; gap: 8px; }
+    }
+    @media (max-width: 480px){
+      header img { width: 92px; height: 92px; }
+      section { padding: 14px 2vw 10px 2vw; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- PHOTO: You can replace 'image20.png' with your image file name -->
+    <img src="profile_photo.jpg" alt="Kunal Banerjee" onerror="this.style.display='none'">
+    <h1>Kunal Banerjee</h1>
+    <p>Final-year Student in B.Tech in Industrial Production Engineering .</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+
+    <section id="about">
+      <h2>About</h2>
+      <div class="two-col">
+        <div>
+          <p>
+            Enthusiastic and diligent Industrial Production Engineering student (Guru Ghasidas Vishwavidyalaya, CGPA 6.6), passionate about sustainable manufacturing, IoT automation, and data-driven optimization. Proficient with CAD design, process management, and practical implementation of Industry 4.0 solutions. Eager to apply technical and teamwork skills to meaningful engineering challenges.
+          </p>
+        </div>
+        <div>
+          <strong>Education:</strong><br>
+          <span>B.Tech, Industrial & Production Engineering - 6.6 CGPA (2022-Present)</span><br>
+          <span>12th CBSE: 84.5%</span><br>
+          <span>10th ICSE: 83.3%</span><br>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills & Technologies</h2>
+      <ul class="skills-list">
+        <li>Industrial Software: Matlab, FreeCAD, Ansys</li>
+        <li>Microsoft Office</li>
+        <li>Power BI, Excel</li>
+        <li>Data Analytics & Visualization</li>
+        <li>Machine Learning & Generative AI</li>
+        <li>IoT: Arduino, Raspberry Pi, Sensors</li>
+        <li>Java, Python, C</li>
+        <li>Web Development</li>
+        <li>App Development: Flutter, Spring Boot</li>
+        <li>Teamwork & Communication</li>
+        <li>Problem Solving</li>
+      </ul>
+      <br>
+      <strong>Languages:</strong>
+      <ul class="skills-list">
+        <li>English (Fluent)</li>
+        <li>Hindi (Fluent)</li>
+        <li>Bengali (Fluent)</li>
+        <li>Latin (Intermediate)</li>
+      </ul>
+    </section>
+
+    <section id="experience">
+      <h2>Internship Experience</h2>
+      <div class="exp-card">
+        <h3>Let's Move On (2024, 6 Months)</h3>
+        <div class="exp-meta">Android Developer & Management</div>
+        <ul>
+          <li>Developed initial application using Flutter and Spring Boot frameworks.</li>
+          <li>Led management and development teams for cohesive project delivery.</li>
+          <li>Worked on social media marketing and launch strategy.</li>
+        </ul>
+      </div>
+      <div class="exp-card">
+        <h3>Tata (2025, 2 Months)</h3>
+        <div class="exp-meta">Data Analytics & Visualization</div>
+        <ul>
+          <li>Applied Power BI and Excel for market forecast and investment analytics.</li>
+          <li>Gained real-time analytics experience interpreting large datasets to guide business decisions.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Featured Projects</h2>
+      <div class="proj-card">
+        <h3>
+          <span class="proj-badge">Research</span>
+          Evaluating Electric Vehicle Adoption in India
+        </h3>
+        <ul>
+          <li>Comprehensive analysis of EVs versus ICE vehicles in India, covering lifecycle environmental impact, energy efficiency (EVs: 85-90%, ICE: 20-25%).</li>
+          <li>Quantified greenhouse gas reduction (cars: 19-34%, motorcycles: 33-45%, scooters: 38-50%) under India's coal-heavy grid—regional analysis included.</li>
+          <li>Investigated lithium-ion battery recycling (90-95% recovery possible); studied policy impacts (FAME-II, PLI support).</li>
+          <li>Produced actionable recommendations for grid integration and policy efforts accelerating EV adoption and decarbonization.</li>
+        </ul>
+      </div>
+      <div class="proj-card">
+        <h3>
+          <span class="proj-badge">Tech Analysis</span>
+          Motor Technology Evaluation Framework
+        </h3>
+        <ul>
+          <li>Compared rare-earth and rare-earth-free EV motor types (SRMs, induction, ferrite-based, EESMs) for efficiency, supply chain resilience, and scalability.</li>
+          <li>Detailed India's LFP battery market growth: $15.28B (2023) to projected $124.4B (2032); highlighted lower lifecycle emissions versus NMC batteries (LFP: 55 kgCO₂e/kWh).</li>
+          <li>Advised on policy and investment strategies to promote domestic EV supply chains and sustainable motor/battery technologies.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div>
+        <div><strong>Phone:</strong> <a href="tel:+917384706948">+91 7384706948</a></div>
+        <div><strong>Email:</strong> <a href="mailto:kunalbanerjee2810@gmail.com">kunalbanerjee2810@gmail.com</a></div>
+        <div><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/kunal-banerjee-792848258" target="_blank">kunal-banerjee-792848258</a></div>
+      </div>
+    </section>
+  </div>
+  <footer>
+    &copy; 2025 Kunal Banerjee. Designed for engineering placements. 
+    <div class="contact-links">
+      <a href="mailto:kunalbanerjee2810@gmail.com">Email</a>|
+      <a href="https://www.linkedin.com/in/kunal-banerjee-792848258" target="_blank">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scroll for nav links
+    document.querySelectorAll('nav a').forEach(link => {
+      link.onclick = function(e) {
+        const href = this.getAttribute('href');
+        if(href && href.startsWith("#")){
+          e.preventDefault();
+          document.querySelector(href).scrollIntoView({
+            behavior: "smooth"
+          });
+        }
+      }
+    });
+  </script>
+</body>
+</html>
